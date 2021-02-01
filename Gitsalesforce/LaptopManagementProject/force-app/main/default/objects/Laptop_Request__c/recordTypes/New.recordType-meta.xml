@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New</fullName>
+    <active>true</active>
+    <label>New</label>
+    <picklistValues>
+        <picklist>Laptop_Accessories__c</picklist>
+        <values>
+            <fullName>Headphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keyboard Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop Cooling mat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USB Reading Lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wireless Mouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Laptop_Model__c</picklist>
+        <values>
+            <fullName>Apple MacBook Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Precision 3560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 6470b ProBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo Thinkpad Twist S230U</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Software_Require__c</picklist>
+        <values>
+            <fullName>Advanced Rest Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Git Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notepad%2B%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDX CLI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual Studio Code</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Available</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Blocked for Allocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested for Collection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

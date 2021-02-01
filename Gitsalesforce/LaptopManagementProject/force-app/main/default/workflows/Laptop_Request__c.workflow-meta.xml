@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Approved_Checkbox</fullName>
+        <field>ApprovalStatus__c</field>
+        <literalValue>1</literalValue>
+        <name>Approved Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_Checkbox</fullName>
+        <field>ApprovalStatus__c</field>
+        <literalValue>0</literalValue>
+        <name>Rejected Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Allocated</fullName>
+        <field>Stage__c</field>
+        <literalValue>Allocated</literalValue>
+        <name>Stage Allocated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Blocked_For_allocation</fullName>
+        <field>Stage__c</field>
+        <literalValue>Blocked for Allocation</literalValue>
+        <name>Stage-Blocked For allocation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Laptop task</fullName>
+        <actions>
+            <name>Stage_Allocated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Laptop_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>New_Laptop_Allocation_and_Software_installation</fullName>
+        <assignedTo>IT_Admin</assignedTo>
+        <assignedToType>role</assignedToType>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Laptop_Request__c.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>New Laptop Allocation and Software installation</subject>
+    </tasks>
+</Workflow>
