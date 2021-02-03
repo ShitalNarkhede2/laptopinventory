@@ -155,7 +155,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Laptop Stock</label>
     <nameField>
-        <label>Laptop Details Name</label>
+        <label>Laptop Company</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>

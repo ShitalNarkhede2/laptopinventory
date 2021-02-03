@@ -2,10 +2,9 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Requests</fullName>
     <columns>NAME</columns>
-    <columns>OWNER.FIRST_NAME</columns>
-    <columns>OWNER.LAST_NAME</columns>
     <columns>Stage__c</columns>
     <columns>CREATED_DATE</columns>
+    <columns>OBJECT_ID</columns>
     <filterScope>Mine</filterScope>
     <label>Requests</label>
 </ListView>

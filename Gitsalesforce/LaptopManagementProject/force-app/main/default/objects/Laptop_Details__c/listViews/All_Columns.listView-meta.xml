@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All_Columns</fullName>
+    <columns>Serial_Number__c</columns>
     <columns>NAME</columns>
-    <columns>Company__c</columns>
     <columns>Product__c</columns>
-    <columns>CREATEDBY_USER</columns>
     <columns>Inches__c</columns>
-    <columns>Quantity_Available__c</columns>
+    <columns>Laptop_Status__c</columns>
+    <columns>Allocated_To__c</columns>
     <columns>OBJECT_ID</columns>
     <filterScope>Mine</filterScope>
     <label>All Columns</label>

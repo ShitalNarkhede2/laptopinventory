@@ -31,10 +31,30 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Stage_Blocked_For_allocation</fullName>
+        <fullName>StatusAwaitingApproval</fullName>
         <field>Stage__c</field>
-        <literalValue>Blocked for Allocation</literalValue>
-        <name>Stage-Blocked For allocation</name>
+        <literalValue>Awaiting Approval</literalValue>
+        <name>Status- Awaiting Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_In_Progress</fullName>
+        <field>Stage__c</field>
+        <literalValue>In Progress</literalValue>
+        <name>Status- In Progress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Rejected</fullName>
+        <field>Stage__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status - Rejected</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

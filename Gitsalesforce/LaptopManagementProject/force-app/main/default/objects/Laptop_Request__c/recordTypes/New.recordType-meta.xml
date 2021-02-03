@@ -86,20 +86,20 @@
     <picklistValues>
         <picklist>Stage__c</picklist>
         <values>
-            <fullName>Allocated</fullName>
+            <fullName>Awaiting Approval</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Available</fullName>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
             <default>true</default>
-        </values>
-        <values>
-            <fullName>Blocked for Allocation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Requested for Collection</fullName>
-            <default>false</default>
         </values>
     </picklistValues>
 </RecordType>

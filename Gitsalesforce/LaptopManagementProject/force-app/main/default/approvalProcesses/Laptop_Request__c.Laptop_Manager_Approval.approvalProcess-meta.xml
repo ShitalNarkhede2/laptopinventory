@@ -3,12 +3,21 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>davepaul@gmail.com</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>test-2dpx7rjtu0xc@example.com</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>usersub@gmail.com</submitter>
+        <type>user</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
         <field>Request_Type__c</field>
-        <field>Owner</field>
+        <field>00N6D000008iChc</field>
         <field>Laptop_Model__c</field>
         <field>Laptop_Accessories__c</field>
         <field>Software_Require__c</field>
@@ -25,14 +34,21 @@
         <name>Step_1</name>
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Laptop_Request__c.Stage__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+    </entryCriteria>
     <finalApprovalActions>
         <action>
             <name>Approved_Checkbox</name>
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>New_Laptop_Allocation_and_Software_installation</name>
-            <type>Task</type>
+            <name>Status_In_Progress</name>
+            <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
@@ -41,11 +57,15 @@
             <name>Rejected_Checkbox</name>
             <type>FieldUpdate</type>
         </action>
+        <action>
+            <name>Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Stage_Blocked_For_allocation</name>
+            <name>StatusAwaitingApproval</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>

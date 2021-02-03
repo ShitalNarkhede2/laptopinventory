@@ -13,6 +13,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Dell Precision 3560</fullName>
+                <default>false</default>
+                <label>Dell Precision 3560</label>
+            </value>
+            <value>
                 <fullName>HP 6470b ProBook</fullName>
                 <default>false</default>
                 <label>HP 6470b ProBook</label>
@@ -26,11 +31,6 @@
                 <fullName>Lenovo Thinkpad Twist S230U</fullName>
                 <default>false</default>
                 <label>Lenovo Thinkpad Twist S230U</label>
-            </value>
-            <value>
-                <fullName>Dell Precision 3560</fullName>
-                <default>false</default>
-                <label>Dell Precision 3560</label>
             </value>
         </valueSetDefinition>
     </valueSet>
